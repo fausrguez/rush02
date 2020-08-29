@@ -5,6 +5,13 @@
 
 Create a program that takes a number as argument and converts it to its written letters value.
 
+Turn-in directory: `ex00/`
+
+Files to turn in: `Makefile and all the necessary files`
+
+Allowed functions : `write`, `malloc`, `free`, `open`, `read`, `close`
+
+
 ---
 
 - Executable name: `rush-02`
