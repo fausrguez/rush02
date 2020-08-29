@@ -6,7 +6,7 @@
 #    By: farodrig <marvin@codam.nl>                   +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/08/29 18:29:39 by farodrig      #+#    #+#                  #
-#    Updated: 2020/08/29 18:55:49 by farodrig      ########   odam.nl          #
+#    Updated: 2020/08/29 19:05:49 by farodrig      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,3 +21,4 @@ clean:
 
 fclean: clean
 	@find data -name *.dict -not -name $(MAIN_DICTIONARY) -delete
+	
