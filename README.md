@@ -35,10 +35,8 @@ make
 - You only need to use the initial entries (For instance, if we add 54: fifty-four, you still have to use 50: fifty and 4: four)
 	- The entries of the dictionary can be stored in any order.
 	- There can be empty lines in the dictionary.
-	- If you have any errors from the dictionary parsing, your program must output
-"Dict Error\n"
-	- If the dictionary doesn’t allow you to resolve the asked value, your program
-must output "Dict Error\n".
+	- If you have any errors from the dictionary parsing, your program must output `Dict Error\n`
+	- If the dictionary doesn’t allow you to resolve the asked value, your programmust output `Dict Error\n`.
 - Example:
 ```
 $> ./rush-02 42 | cat -e
