@@ -6,7 +6,7 @@
 /*   By: farodrig <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/08/30 21:23:12 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/08/30 21:23:14 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/08/30 21:25:43 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 #include "print_str.h"
 #include "print_char.h"
 
-#define OPEN_RECORD
 #ifndef OPEN_RECORD
+#define OPEN_RECORD
 void	open_record(char ***dictionary, char *n_record)
 {
 	int record;
