@@ -6,7 +6,7 @@
 /*   By: saamian <marvin@codam.nl>                    +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/08/30 18:12:25 by saamian       #+#    #+#                 */
-/*   Updated: 2020/08/30 21:03:09 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/08/30 21:21:32 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 #include "libs/entry_is_valid.h"
 #include "libs/print_str.h"
 #include "libs/get_dict.h"
+#include "libs/open_record.h"
 
 int main(int argc, char **argv)
 {
@@ -46,6 +47,7 @@ int main(int argc, char **argv)
 			print_str("Error\n");
 			return (0);
 		}
+		open_record(dictionary, n_record);
 	}
 	if (argc == 3)
 	{
