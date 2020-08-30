@@ -1,13 +1,10 @@
 #include "headers.h"
 #include "str_length.h"
 
-
 char *trimmed_input(char *n_record, char *entry_value)
-
-char trimmed_input;
-char numkey;
+{
+char *numkey;
 char value
-
 int i;
 
 i = 0;
@@ -19,9 +16,11 @@ while (n_record[i] != '\0' && != ':')
 	{
 		i++;
 	}
-	return (0);
 }
 numkey = &n_record[];
+
+return (numkey);
+}
 while (entry_value[j] != '\0';
 {
 	if ((entry_value[j] == ' ')
@@ -39,5 +38,5 @@ while (entry_value[j] != '\0';
 }
 value = &entry_value[];
 
-return (0;
+return (value);
 }
