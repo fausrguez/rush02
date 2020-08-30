@@ -6,13 +6,15 @@
 /*   By: farodrig <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/08/30 18:20:33 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/08/30 18:20:35 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/08/30 20:52:24 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "headers.h"
 #include "str_length.h"
 
+#ifndef CONCAT_STR
+#define CONCAT_STR
 char *concat_str(char *str1, char *str2)
 {
 	unsigned int str1_size;
@@ -39,3 +41,4 @@ char *concat_str(char *str1, char *str2)
 	res[c] = '\0';
 	return (res);
 }
+#endif

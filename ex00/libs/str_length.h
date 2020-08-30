@@ -6,10 +6,12 @@
 /*   By: farodrig <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/08/29 19:41:09 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/08/29 19:41:13 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/08/30 20:43:36 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef STR_LENGTH
+#define STR_LENGTH
 unsigned int	str_length(const char *str)
 {
 	unsigned int size;
@@ -21,3 +23,4 @@ unsigned int	str_length(const char *str)
 	}
 	return (size);
 }
+#endif
