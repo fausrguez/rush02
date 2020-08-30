@@ -6,7 +6,7 @@
 /*   By: farodrig <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/08/30 21:23:12 by farodrig      #+#    #+#                 */
-/*   Updated: 2020/08/30 22:13:47 by farodrig      ########   odam.nl         */
+/*   Updated: 2020/08/30 22:31:13 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,20 @@ static int search_record(char ***dictionary, char *n_record)
 	return (0);
 }
 
+
+void	ft_putnbr(char ***dictionary, int nb)
+{
+	if (nb >= 10)
+	{
+		ft_putnbr(dictionary, nb / 10);
+		ft_putnbr(dictionary, nb % 10);
+	}
+	else
+	{
+		search_record(dictionary, ft_itoa(nb * get_zeros(nb)));
+	}
+}
+
 void open_record(char ***dictionary, char *n_record)
 {
 	int nb;
@@ -59,11 +73,7 @@ void open_record(char ***dictionary, char *n_record)
 	if(!search_record(dictionary, n_record))
 	{
 		nb = ft_atoi(n_record);
-		while (nb > 0)
-		{
-			search_record(dictionary, ft_itoa((nb % 10) * get_zeros(nb)));
-			nb /= 10;
-		}
+		ft_putnbr(dictionary, nb);
 		print_char('\n');
 	} else {
 		return ;
